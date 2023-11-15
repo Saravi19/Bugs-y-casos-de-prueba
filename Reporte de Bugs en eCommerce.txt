@@ -1,0 +1,208 @@
+# Reporte de Bugs en eCommerce
+
+## standard_user
+
+1. **Orden Alfabético de Productos:**
+   - **Problema:** Los productos no se ordenan alfabéticamente.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario estándar.
+      2. Explorar productos y verificar el orden.
+   - **Resultado Esperado:** Los productos deben mostrarse en orden alfabético.
+
+2. **Avance con Producto en el Carrito:**
+   - **Problema:** Se puede avanzar en el proceso de compra sin tener productos en el carrito.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario estándar.
+      2. Iniciar el proceso de compra sin tener productos en el carrito.
+   - **Resultado Esperado:** Debería impedirse avanzar sin productos en el carrito.
+
+3. **Modal de Confirmación de Pago:**
+   - **Problema:** El modal de confirmación de pago no se muestra.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario estándar.
+      2. Realizar una compra y proceder al pago.
+   - **Resultado Esperado:** Debería mostrarse un modal de confirmación de pago.
+
+4. **Pago sin Productos en el Carrito:**
+   - **Problema:** Se puede realizar el pago sin tener productos en el carrito.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario estándar.
+      2. Ir al proceso de pago sin tener productos en el carrito.
+   - **Resultado Esperado:** Debería impedirse realizar el pago sin productos en el carrito.
+
+5. **Texto No Asociado a Descripción del Producto:**
+   - **Problema:** Uno de los productos contiene texto no asociado a la descripción del producto.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario estándar.
+      2. Revisar la descripción de cada producto.
+   - **Resultado Esperado:** La descripción debe estar asociada correctamente al producto.
+
+## locked_out_user
+
+1. **Usuario de Prueba Bloqueado:**
+   - **Problema:** No permite iniciar sesión con un usuario bloqueado.
+   - **Pasos para Reproducir:**
+      1. Intentar iniciar sesión con un usuario bloqueado.
+   - **Resultado Esperado:** Debería impedirse iniciar sesión con un usuario bloqueado.
+
+## problem_user
+
+1. **Filtrado por Orden Alfabético:**
+   - **Problema:** El sistema no filtra por orden alfabético.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Explorar productos y verificar el filtro alfabético.
+   - **Resultado Esperado:** Debería ser posible filtrar los productos por orden alfabético.
+
+2. **Ubicación de Cantidad y Descripción en Carrito:**
+   - **Problema:** La cantidad y la descripción están en la misma línea en el carrito de compras.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Agregar productos al carrito y revisar la presentación.
+   - **Resultado Esperado:** La cantidad y la descripción deben mostrarse correctamente en líneas separadas.
+
+3. **Vista Previa de Productos:**
+   - **Problema:** No se muestra una vista previa de los productos.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Explorar productos y verificar si hay vista previa.
+   - **Resultado Esperado:** Debería mostrarse una vista previa de los productos.
+
+4. **Textos Incorrectos:**
+   - **Problema:** Textos incorrectos en la interfaz.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Explorar diferentes secciones y verificar los textos.
+   - **Resultado Esperado:** Los textos deben ser coherentes y correctos.
+
+5. **No Agrega Todos los Artículos en Móvil y Escritorio:**
+   - **Problema:** No se agregan todos los artículos al carrito en dispositivos móviles y de escritorio.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Agregar varios artículos al carrito desde dispositivos móviles y de escritorio.
+   - **Resultado Esperado:** Todos los artículos seleccionados deben agregarse al carrito correctamente.
+
+6. **No Elimina al Clic en Móvil y Escritorio:**
+   - **Problema:** No se elimina un producto al dar clic en dispositivos móviles y de escritorio.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Agregar varios productos al carrito.
+   - **Resultado Esperado:** Debería ser posible eliminar productos al dar clic en dispositivos móviles y de escritorio.
+
+7. **Imágenes que no Coinciden en el Detalle del Producto:**
+   - **Problema:** Las imágenes no coinciden al revisar el detalle del producto.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Explorar productos y verificar el detalle del producto.
+   - **Resultado Esperado:** Las imágenes deben coincidir con el producto seleccionado.
+
+8. **Clic en Otro Producto Llama a Otro, en Valor, Descripción e Imagen:**
+   - **Problema:** Al dar clic en otro producto, se muestra información incorrecta.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Navegar entre productos y verificar la información mostrada.
+   - **Resultado Esperado:** Al dar clic en un producto, debe mostrarse la información correcta.
+
+9. **No Trae Valores Correctos, Llama Valores no Numéricos:**
+   - **Problema:** Los valores no son correctos y se llaman valores no numéricos.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Realizar transacciones y verificar los valores.
+   - **Resultado Esperado:** Deberían mostrarse valores numéricos correctos.
+
+10. **No Existe una Pasarela de Pagos para Validar Tipo de Pago:**
+    - **Problema:** No hay una pasarela de pagos para validar si es tarjeta de crédito u otro medio de pago.
+    - **Pasos para Reproducir:**
+       1. Iniciar sesión con un usuario con problemas.
+       2. Ir al proceso de pago y verificar las opciones de pago.
+    - **Resultado Esperado:** Debería haber una pasarela de pagos que permita validar el tipo de pago.
+
+## performance_glitch_user
+
+1. **Cambio de URL al Volver Después de Clic en Producto:**
+   - **Problema:** Al dar clic en un producto y luego volver a todos, la URL cambia.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Navegar entre productos y verificar la URL.
+   - **Resultado Esperado:** La URL no debería cambiar al volver después de dar clic en un producto.
+
+2. **Demoras en la Carga:**
+   - **Problema:** Se experimentan demoras en la carga de la página.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Navegar por diferentes secciones y verificar la velocidad de carga.
+   - **Resultado Esperado:** La carga de la página debería ser inmediata, sin demoras perceptibles.
+
+## error_user
+
+1. **Botón de Agregar no Funciona en Algunos Productos:**
+   - **Problema:** El botón de agregar no funciona correctamente en algunos productos.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Intentar agregar productos al carrito y verificar el botón de agregar.
+   - **Resultado Esperado:** El botón de agregar debería funcionar correctamente en todos los productos.
+
+2. **No Remueve el CTA al Dar Clic:**
+   - **Problema:** Al dar clic en el CTA, no se remueve correctamente.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Realizar acciones en la página que involucren el CTA.
+   - **Resultado Esperado:** El CTA debería removerse correctamente al dar clic.
+
+3. **Campo de Last Name no Funciona al Dejar Datos para Compra:**
+   - **Problema:** El campo de last name no funciona correctamente al dejar datos para la compra.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Ir al proceso de compra y verificar el campo de last name.
+   - **Resultado Esperado:** El campo de last name debería aceptar y almacenar datos correctamente.
+
+4. **Permite Avanzar sin Datos Completados para Finalizar la Compra:**
+   - **Problema:** Se puede avanzar en el proceso de compra sin completar todos los datos.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Ingresar al proceso de compra y verificar el avance.
+   - **Resultado Esperado:** Debería impedirse avanzar sin completar todos los datos necesarios para la compra.
+
+5. **Espacio Excesivo Entre las Cards en la Versión Responsive:**
+   - **Problema:** Hay mucho espacio entre las cards en la versión responsive.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario con problemas.
+      2. Visualizar las cards en la versión responsive.
+   - **Resultado Esperado:** El espacio entre las cards debería ser adecuado para la versión responsive.
+
+## visual_user
+
+1. **Menú de Hamburguesa Desalineado:**
+   - **Problema:** El menú de hamburguesa no está alineado correctamente.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario visual.
+      2. Verificar la alineación del menú de hamburguesa.
+   - **Resultado Esperado:** El menú de hamburguesa debe estar alineado correctamente.
+
+2. **Carrito de Compras Desalineado:**
+   - **Problema:** El carrito de compras no está alineado correctamente.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario visual.
+      2. Verificar la alineación del carrito de compras.
+   - **Resultado Esperado:** El carrito de compras debe estar alineado correctamente.
+
+3. **Productos Cargados Incorrectamente:**
+   - **Problema:** Se cargan productos incorrectos.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario visual.
+      2. Explorar productos y verificar la carga.
+   - **Resultado Esperado:** Los productos cargados deben ser los correctos según la exploración del usuario visual.
+
+4. **Botón de Checkout No Alineado en la Parte Inferior de la Vista de Carrito de Compras:**
+   - **Problema:** El botón de checkout no está alineado en la parte inferior de la vista de carrito de compras.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario visual.
+      2. Verificar la alineación del botón de checkout en la vista de carrito de compras.
+   - **Resultado Esperado:** El botón de checkout debería estar alineado correctamente en la parte inferior.
+
+5. **Valor Antes de Impuestos Desajustado, Debe Simplificarse:**
+   - **Problema:** El valor antes de impuestos está desajustado y debe simplificarse.
+   - **Pasos para Reproducir:**
+      1. Iniciar sesión con un usuario visual.
+      2. Realizar acciones que involucren el cálculo de impuestos.
+   - **Resultado Esperado:** El valor antes de impuestos debe mostrarse correctamente y de forma simplificada.

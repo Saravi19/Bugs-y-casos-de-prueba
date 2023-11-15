@@ -1,0 +1,114 @@
+﻿# Casos de Prueba para eCommerce
+
+## standard_user
+
+### Escenario de Exploración y Carrito:
+
+**Pasos:**
+1. Iniciar sesión con un usuario.
+2. Navegar por diferentes categorías, productos y seleccionar un producto específico para ver detalles.
+3. Agregar el producto al carrito.
+4. Verificar el contenido del carrito.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario inicia sesión correctamente, explora productos, agrega un artículo al carrito y verifica que el carrito contiene el artículo seleccionado.
+
+### Escenario de Edición de Carrito:
+
+**Pasos:**
+1. Iniciar sesión con un usuario.
+2. Agregar varios productos al carrito.
+3. Editar la cantidad y quitar algunos productos del carrito.
+4. Finalizar la compra.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario inicia sesión, edita el carrito, realiza una compra, verificasu compra realizada y cierra sesión correctamente.
+
+## locked_out_user
+
+### Escenario de Bloqueo de Cuenta:
+
+**Pasos:**
+1. Intentar iniciar sesión con una contraseña incorrecta.
+2. Intentar recuperar la contraseña.
+3. Después de la recuperación, iniciar sesión.
+4. Explorar y realizar acciones
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario intenta iniciar sesión incorrectamente, recupera la contraseña, inicia sesión, explora y cierra sesión correctamente.
+
+## problem_user
+
+### Escenario de Problema con Acciones:
+
+**Pasos:**
+1. Iniciar sesión con un usuario con problemas.
+2. Intentar realizar una acción que normalmente falla.
+3. Resolver el problema y realizar una compra.
+4. Finalizar la compra.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario inicia sesión, experimenta un problema, lo resuelve, realiza una compra y cierra sesión correctamente.
+
+## performance_glitch_user
+
+### Escenario de Rendimiento Rápido:
+
+**Pasos:**
+1. Iniciar sesión con un usuario de rendimiento defectuoso.
+2. Navegar rápidamente por diferentes categorías y realizar acciones en el menú hamburguesa.
+3. Agregar varios productos al carrito rápidamente.
+4. Realizar tres transacciones rápidas de compra.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario de rendimiento defectuoso realiza acciones rápidas sin experimentar ralentizaciones, completa compras y cierra sesión correctamente.
+
+## error_user
+
+### Escenario de Error en Acciones:
+
+**Pasos:**
+1. Iniciar sesión con un usuario propenso a errores.
+2. Intentar realizar una acción que normalmente falla.
+3. Verificar que el sistema maneje el error correctamente.
+4. Realizar acciones en el menú hamburguesa y realizar una compra.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario inicia sesión, encuentra un error, verifica el manejo del error, realiza acciones y cierra sesión correctamente.
+
+## visual_user
+
+### Escenario de Exploración Visual:
+
+**Pasos:**
+1. Iniciar sesión con un usuario visual.
+2. Examinar visualmente cada página, verificando la presentación y alineación de elementos.
+3. Realizar acciones visuales como cambiar temas (aunque no cambien realmente).
+4. Explorar y realizar acciones en el menú hamburguesa.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario visual examina visualmente la interfaz, realiza acciones visuales, explora y cierra sesión correctamente.
+
+### Escenario de Interacción con Elementos Visuales:
+
+**Pasos:**
+1. Iniciar sesión con un usuario visual.
+2. Interactuar con elementos visuales como botones y menús.
+3. Verificar que las interacciones visuales sean receptivas.
+4. Realizar una compra y finalizar la compra.
+5. Cerrar sesión.
+
+**Resultado Esperado:**
+- El usuario visual interactúa con elementos visuales, realiza una compra y cierra sesión correctamente.
+
+
+Error General****
+
+Al añadir productos al carrito de compras y estos no se remueven, al cambiar de usuario estos permanecen añadidos, al ser diferentes tipos o roles de usuarios el carrito de compras debe estar vacio para cada prueba.
